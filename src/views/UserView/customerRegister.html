@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+    <script>window.$ = window.jQuery = require('./../../js/jquery.js')</script>
+    <script src="../../ML-Api/faceDetectionControls.js"></script>
+    <script defer src="../../ML-Api/dist/face-api.js"></script>
+    <script defer src="../../js/UserJs/customerRegister.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="../../img/Augle-Icon.png" width="50" height="50" class="d-inline-block align-top" alt=""> 
+        </a>
+        <button class="btn btn-sm btn-outline-dark float-right" style="font-size: 20px; font-family: 'Maven Pro', sans-serif;">Sign Out</button>
+    </nav>
+
+    <div class="text-center" style="font-size: 35px;" >Register Customer</div>
+    <div style="display: flex; justify-content: center">
+        <img src="" alt="" id="faceIMG" width="500" height="350px">
+    </div>
+
+    <div style="border:none; padding: 10px 30px 0 30px; margin-top: 15px">
+            <form>
+                <div class="form-group row">
+                    <label for="inputName" class="col-sm-2 col-form-label" onclick="sign_out()" style="font-size: 20px; font-family: 'Maven Pro', sans-serif;">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="name" required class="form-control" id="inputName">
+                    </div>
+                </div>
+        
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label" style="font-size: 20px; font-family: 'Maven Pro', sans-serif;">Email</label>
+                    <div class="col-sm-10">
+                    <input type="email" name="email" required class="form-control" id="inputEmail">
+                    </div>
+                </div>
+        
+                <div class="form-group row">
+                    <label for="inputNumber" class="col-sm-2 col-form-label" style="font-size: 20px; font-family: 'Maven Pro', sans-serif;">Number</label>
+                    <div class="col-sm-10">
+                        <input type="number" name="number" required class="form-control" id="inputNumber">
+                    </div>
+                </div>
+                
+                <div class="container-fluid" style="padding: 30px 0px">
+                    <div class="row">                    
+                            <button type="submit" id='ok-btn' class="btn btn-outline-primary  col-sm-5" style="font-size: 40px; font-family: 'Maven Pro', sans-serif;">OK</button>
+                        <div class="col-sm-2"></div>
+                           <button type="button" class="btn btn-outline-dark col-sm-5" style="font-size: 40px; font-family: 'Maven Pro', sans-serif;" onclick="cancel()">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+</body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+</html>
