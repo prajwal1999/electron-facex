@@ -39,7 +39,7 @@ let startVideo = async()=>{
       }
       else{
         obj = JSON.parse(data)
-        global.tempData.storeId = obj.storeId
+        global.tempData.storeId = obj.storeId6
       }
     })
 }
