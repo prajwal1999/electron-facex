@@ -21,6 +21,6 @@
     "webcamjs": "^1.0.25"
   },
   "devDependencies": {
-    "electron": "^5.0.1"
+    "electron": "^9.1.0"
   }
 }
